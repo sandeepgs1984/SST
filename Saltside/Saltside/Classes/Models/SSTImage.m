@@ -61,7 +61,7 @@ NSString *const kTitle = @"title";
 	NSMutableAttributedString *attributedContentString = [[NSMutableAttributedString alloc] init];
 	
 	if (self.title.length > 0) {
-		NSAttributedString *titleStr = [[NSAttributedString alloc] initWithString:_title attributes:@{NSForegroundColorAttributeName : [UIColor blackColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:[UIDevice isCurrentDevicePhone] ? 16.0 : 18.0]}];
+		NSAttributedString *titleStr = [[NSAttributedString alloc] initWithString:[_title capitalizedString] attributes:@{NSForegroundColorAttributeName : [UIColor blackColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:[UIDevice isCurrentDevicePhone] ? 16.0 : 18.0]}];
 		[attributedContentString appendAttributedString:titleStr];
 	}
 	
