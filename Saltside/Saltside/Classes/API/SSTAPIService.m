@@ -62,7 +62,7 @@ typedef void (^SSTServiceSessionFailureBlock) (NSURLSessionDataTask *task, NSErr
 			if (Nil != modelClass && [actualResponse isKindOfClass:[NSArray class]]) {
 				result = [modelClass modelObjectWithArray:actualResponse];
 			}
-			if (Nil != modelClass && [actualResponse isKindOfClass:[NSDictionary class]]) {
+			else if (Nil != modelClass && [actualResponse isKindOfClass:[NSDictionary class]]) {
 				result = [modelClass modelObjectWithDictionary:actualResponse];
 			}
 			else {
