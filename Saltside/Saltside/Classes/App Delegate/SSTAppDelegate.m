@@ -7,6 +7,7 @@
 //
 
 #import "SSTAppDelegate.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
 @interface SSTAppDelegate ()
 
@@ -19,6 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+
+	/**
+	 *  Enable showing status bar indicator for network requests
+	 */
+	[AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
 
 		// Navigaton bar & status bar appearance
 	[self setUpNavBarAppearance];
