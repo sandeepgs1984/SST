@@ -10,6 +10,10 @@
 		0E50D7EF1C00460B00EC8552 /* SSTAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7EE1C00460B00EC8552 /* SSTAPIService.m */; settings = {ASSET_TAGS = (); }; };
 		0E50D7F21C00469900EC8552 /* SSTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7F11C00469900EC8552 /* SSTUtilities.m */; settings = {ASSET_TAGS = (); }; };
 		0E50D7F51C00479700EC8552 /* SSTURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7F41C00479700EC8552 /* SSTURLCache.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D7F91C0055F500EC8552 /* SSTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7F81C0055F500EC8552 /* SSTModel.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D7FC1C0058C800EC8552 /* SSTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7FB1C0058C800EC8552 /* SSTImage.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D7FF1C005CEF00EC8552 /* SSTImagesFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7FE1C005CEF00EC8552 /* SSTImagesFeed.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D8021C005E9100EC8552 /* SSTAPIService+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D8011C005E9100EC8552 /* SSTAPIService+Images.m */; settings = {ASSET_TAGS = (); }; };
 		0E58C6F31C00259C00D0C841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C6F21C00259C00D0C841 /* main.m */; };
 		0E58C6FC1C00259C00D0C841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C6FA1C00259C00D0C841 /* Main.storyboard */; };
 		0E58C6FE1C00259C00D0C841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C6FD1C00259C00D0C841 /* Assets.xcassets */; };
@@ -37,6 +41,14 @@
 		0E50D7F11C00469900EC8552 /* SSTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTUtilities.m; sourceTree = "<group>"; };
 		0E50D7F31C00479700EC8552 /* SSTURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTURLCache.h; sourceTree = "<group>"; };
 		0E50D7F41C00479700EC8552 /* SSTURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTURLCache.m; sourceTree = "<group>"; };
+		0E50D7F71C0055F500EC8552 /* SSTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTModel.h; sourceTree = "<group>"; };
+		0E50D7F81C0055F500EC8552 /* SSTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTModel.m; sourceTree = "<group>"; };
+		0E50D7FA1C0058C800EC8552 /* SSTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTImage.h; sourceTree = "<group>"; };
+		0E50D7FB1C0058C800EC8552 /* SSTImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTImage.m; sourceTree = "<group>"; };
+		0E50D7FD1C005CEF00EC8552 /* SSTImagesFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTImagesFeed.h; sourceTree = "<group>"; };
+		0E50D7FE1C005CEF00EC8552 /* SSTImagesFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTImagesFeed.m; sourceTree = "<group>"; };
+		0E50D8001C005E9100EC8552 /* SSTAPIService+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSTAPIService+Images.h"; sourceTree = "<group>"; };
+		0E50D8011C005E9100EC8552 /* SSTAPIService+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSTAPIService+Images.m"; sourceTree = "<group>"; };
 		0E58C6EE1C00259B00D0C841 /* Saltside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saltside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E58C6F21C00259C00D0C841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E58C6FB1C00259C00D0C841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,8 +93,23 @@
 				0E50D7EE1C00460B00EC8552 /* SSTAPIService.m */,
 				0E50D7F31C00479700EC8552 /* SSTURLCache.h */,
 				0E50D7F41C00479700EC8552 /* SSTURLCache.m */,
+				0E50D8001C005E9100EC8552 /* SSTAPIService+Images.h */,
+				0E50D8011C005E9100EC8552 /* SSTAPIService+Images.m */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		0E50D7F61C00559400EC8552 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E50D7F71C0055F500EC8552 /* SSTModel.h */,
+				0E50D7F81C0055F500EC8552 /* SSTModel.m */,
+				0E50D7FD1C005CEF00EC8552 /* SSTImagesFeed.h */,
+				0E50D7FE1C005CEF00EC8552 /* SSTImagesFeed.m */,
+				0E50D7FA1C0058C800EC8552 /* SSTImage.h */,
+				0E50D7FB1C0058C800EC8552 /* SSTImage.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0E58C6E51C00259B00D0C841 = {
@@ -142,6 +169,7 @@
 				0E58C7171C00266600D0C841 /* App Delegate */,
 				0E58C71B1C00266600D0C841 /* View Controllers */,
 				0E58C71E1C00266600D0C841 /* Views */,
+				0E50D7F61C00559400EC8552 /* Models */,
 				0E50D7EC1C0045DF00EC8552 /* API */,
 				0E58C71A1C00266600D0C841 /* Common */,
 			);
@@ -358,9 +386,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E58C6F31C00259C00D0C841 /* main.m in Sources */,
+				0E50D8021C005E9100EC8552 /* SSTAPIService+Images.m in Sources */,
 				0E50D7F51C00479700EC8552 /* SSTURLCache.m in Sources */,
+				0E50D7FC1C0058C800EC8552 /* SSTImage.m in Sources */,
+				0E50D7FF1C005CEF00EC8552 /* SSTImagesFeed.m in Sources */,
 				0E58C7211C00266600D0C841 /* SSTHomeViewController.m in Sources */,
 				0E58C7201C00266600D0C841 /* SSTAppDelegate.m in Sources */,
+				0E50D7F91C0055F500EC8552 /* SSTModel.m in Sources */,
 				0E50D7F21C00469900EC8552 /* SSTUtilities.m in Sources */,
 				0E50D7EF1C00460B00EC8552 /* SSTAPIService.m in Sources */,
 			);
