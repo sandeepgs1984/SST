@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString *desc;
 @property (nonatomic, strong) NSString *title;
 
+@property (nonatomic, strong) NSAttributedString *attributedContentString; // Construct attributed string from the title and description at the time of object creation itself as to avoid creating multiple times everytime cell has reused
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "SSTImage.h"
+#import "UIDevice+DeviceType.h"
 
 NSString *const kImage = @"image";
 NSString *const kDescription = @"description";
@@ -30,6 +31,9 @@ NSString *const kTitle = @"title";
 		_image = [self objectOrNilForKey:kImage fromDictionary:dict];
 		_desc = [self objectOrNilForKey:kDescription fromDictionary:dict];
 		_title = [self objectOrNilForKey:kTitle fromDictionary:dict];
+		
+			// Create attributed string for title and desc to display in a view
+		[self constructAttributedString];
 	}
 	
 	return self;
@@ -47,6 +51,34 @@ NSString *const kTitle = @"title";
 - (NSString *)description
 {
 	return [NSString stringWithFormat:@"%@", [self dictionaryRepresentation]];
+}
+
+- (void) constructAttributedString
+{
+	NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+	[paragraphStyle setAlignment:NSTextAlignmentLeft];
+	[paragraphStyle setLineSpacing:[UIDevice isCurrentDevicePhone] ? 3 : 4];
+	
+	NSMutableAttributedString *attributedContentString = [[NSMutableAttributedString alloc] init];
+	
+	if (self.title.length > 0) {
+		NSAttributedString *titleStr = [[NSAttributedString alloc] initWithString:_title attributes:@{NSForegroundColorAttributeName : [UIColor blackColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:[UIDevice isCurrentDevicePhone] ? 16.0 : 18.0]}];
+		[attributedContentString appendAttributedString:titleStr];
+	}
+	
+	if (self.desc.length > 0) {
+		
+		NSAttributedString *descStr = [[NSAttributedString alloc] initWithString:self.desc attributes:@{NSForegroundColorAttributeName : [UIColor darkGrayColor], NSFontAttributeName : [UIFont systemFontOfSize:[UIDevice isCurrentDevicePhone] ? 14.0 : 16.0]}];
+
+		if (self.title.length > 0) {
+			[attributedContentString appendAttributedString:[[NSAttributedString alloc] initWithString:@"\u2028"]];
+		}
+		[attributedContentString appendAttributedString:descStr];
+	}
+	
+	[attributedContentString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, attributedContentString.length)];
+	
+	self.attributedContentString = attributedContentString;
 }
 
 #pragma mark - NSCoding Methods
