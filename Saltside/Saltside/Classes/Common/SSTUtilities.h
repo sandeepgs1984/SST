@@ -14,3 +14,10 @@
  *  Returns the directory path for the specific name provided
  */
 + (NSString *) cacheDirectoryPathWithName:(NSString *) name;
+
+/**
+ *  Creates an alert and displays with error info
+ */
++ (void) showAlertWithError:(NSError *) error;
+
+@end

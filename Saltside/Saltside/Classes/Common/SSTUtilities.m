@@ -7,6 +7,7 @@
 //
 
 #import "SSTUtilities.h"
+#import <UIKit/UIKit.h>
 
 @implementation SSTUtilities
 
@@ -16,6 +17,12 @@
 	NSString *documentsDirectory = paths[0];
 	NSString *cacheDirectoryName = [documentsDirectory stringByAppendingPathComponent:name];
 	return cacheDirectoryName;
+}
+
++ (void) showAlertWithError:(NSError *) error
+{
+	UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error!",@"") message:error.localizedDescription delegate:nil cancelButtonTitle:NSLocalizedString(@"OK",@"") otherButtonTitles:nil];
+	[errorAlert show];
 }
 
 @end
