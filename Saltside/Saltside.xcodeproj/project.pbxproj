@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E50D7EF1C00460B00EC8552 /* SSTAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7EE1C00460B00EC8552 /* SSTAPIService.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D7F21C00469900EC8552 /* SSTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7F11C00469900EC8552 /* SSTUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D7F51C00479700EC8552 /* SSTURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7F41C00479700EC8552 /* SSTURLCache.m */; settings = {ASSET_TAGS = (); }; };
 		0E58C6F31C00259C00D0C841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C6F21C00259C00D0C841 /* main.m */; };
 		0E58C6FC1C00259C00D0C841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C6FA1C00259C00D0C841 /* Main.storyboard */; };
 		0E58C6FE1C00259C00D0C841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C6FD1C00259C00D0C841 /* Assets.xcassets */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E50D7ED1C00460B00EC8552 /* SSTAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTAPIService.h; sourceTree = "<group>"; };
+		0E50D7EE1C00460B00EC8552 /* SSTAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTAPIService.m; sourceTree = "<group>"; };
+		0E50D7F01C00469900EC8552 /* SSTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTUtilities.h; sourceTree = "<group>"; };
+		0E50D7F11C00469900EC8552 /* SSTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTUtilities.m; sourceTree = "<group>"; };
+		0E50D7F31C00479700EC8552 /* SSTURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTURLCache.h; sourceTree = "<group>"; };
+		0E50D7F41C00479700EC8552 /* SSTURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTURLCache.m; sourceTree = "<group>"; };
 		0E58C6EE1C00259B00D0C841 /* Saltside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saltside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E58C6F21C00259C00D0C841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E58C6FB1C00259C00D0C841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E50D7EC1C0045DF00EC8552 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0E50D7ED1C00460B00EC8552 /* SSTAPIService.h */,
+				0E50D7EE1C00460B00EC8552 /* SSTAPIService.m */,
+				0E50D7F31C00479700EC8552 /* SSTURLCache.h */,
+				0E50D7F41C00479700EC8552 /* SSTURLCache.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		0E58C6E51C00259B00D0C841 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +142,7 @@
 				0E58C7171C00266600D0C841 /* App Delegate */,
 				0E58C71B1C00266600D0C841 /* View Controllers */,
 				0E58C71E1C00266600D0C841 /* Views */,
+				0E50D7EC1C0045DF00EC8552 /* API */,
 				0E58C71A1C00266600D0C841 /* Common */,
 			);
 			path = Classes;
@@ -139,6 +160,8 @@
 		0E58C71A1C00266600D0C841 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0E50D7F01C00469900EC8552 /* SSTUtilities.h */,
+				0E50D7F11C00469900EC8552 /* SSTUtilities.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -335,8 +358,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E58C6F31C00259C00D0C841 /* main.m in Sources */,
+				0E50D7F51C00479700EC8552 /* SSTURLCache.m in Sources */,
 				0E58C7211C00266600D0C841 /* SSTHomeViewController.m in Sources */,
 				0E58C7201C00266600D0C841 /* SSTAppDelegate.m in Sources */,
+				0E50D7F21C00469900EC8552 /* SSTUtilities.m in Sources */,
+				0E50D7EF1C00460B00EC8552 /* SSTAPIService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
