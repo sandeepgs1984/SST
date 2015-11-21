@@ -10,4 +10,12 @@
 
 @implementation SSTUtilities
 
++ (NSString *) cacheDirectoryPathWithName:(NSString *) name
+{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = paths[0];
+	NSString *cacheDirectoryName = [documentsDirectory stringByAppendingPathComponent:name];
+	return cacheDirectoryName;
+}
+
 @end

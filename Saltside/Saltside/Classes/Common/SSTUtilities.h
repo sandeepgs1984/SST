@@ -10,4 +10,7 @@
 
 @interface SSTUtilities : NSObject
 
-@end
+/**
+ *  Returns the directory path for the specific name provided
+ */
++ (NSString *) cacheDirectoryPathWithName:(NSString *) name;
