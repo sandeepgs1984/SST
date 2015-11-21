@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nzu-L1-gHd" customClass="SSTImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e6J-Kb-eaH" userLabel="imageview">
+                        <rect key="frame" x="10" y="24" width="100" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Hrv-GU-5uU"/>
+                            <constraint firstAttribute="width" constant="100" id="Qv2-Ml-KhK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sterilizer span ticks continuity hubs procurement vision eggs backups cries gap iron" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUX-sl-W9z" userLabel="title label">
+                        <rect key="frame" x="120" y="10" width="166" height="108"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="MUX-sl-W9z" firstAttribute="centerY" secondItem="nzu-L1-gHd" secondAttribute="centerY" id="W3e-eu-1oZ"/>
+                <constraint firstItem="e6J-Kb-eaH" firstAttribute="centerY" secondItem="nzu-L1-gHd" secondAttribute="centerY" id="ZYW-tI-O7e"/>
+                <constraint firstItem="e6J-Kb-eaH" firstAttribute="leading" secondItem="nzu-L1-gHd" secondAttribute="leading" constant="10" id="exC-y2-avw"/>
+                <constraint firstItem="MUX-sl-W9z" firstAttribute="leading" secondItem="e6J-Kb-eaH" secondAttribute="trailing" constant="10" id="hCD-E1-xUd"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MUX-sl-W9z" secondAttribute="trailing" constant="10" id="jRE-zS-ozL"/>
+                <constraint firstItem="MUX-sl-W9z" firstAttribute="top" secondItem="nzu-L1-gHd" secondAttribute="top" constant="10" id="o1u-pJ-dnz"/>
+            </constraints>
+            <connections>
+                <outlet property="contentLabel" destination="MUX-sl-W9z" id="YOV-fY-ovs"/>
+                <outlet property="imageHeight" destination="Hrv-GU-5uU" id="VjZ-u2-ik0"/>
+                <outlet property="imageLabelHorizontalSpace" destination="hCD-E1-xUd" id="rbY-vO-fc7"/>
+                <outlet property="imageLeftSpace" destination="exC-y2-avw" id="BV5-Gv-R2z"/>
+                <outlet property="imageView" destination="e6J-Kb-eaH" id="8nA-cy-8pr"/>
+                <outlet property="imageWidth" destination="Qv2-Ml-KhK" id="5gk-mC-iJd"/>
+                <outlet property="topSpace" destination="o1u-pJ-dnz" id="am8-jL-Dip"/>
+                <outlet property="trailingSpace" destination="jRE-zS-ozL" id="Sia-7W-Y8S"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="162"/>
+        </collectionViewCell>
+    </objects>
+</document>
