@@ -57,12 +57,106 @@
                     <view key="view" contentMode="scaleToFill" id="dGm-Gx-DXY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fx-av-0gZ">
+                                <rect key="frame" x="0.0" y="-20" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="wRd-dM-Lag"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.1333333333" green="0.56862745100000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Details" id="YBP-sb-vut">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="4PQ-z6-E7x">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="close:" destination="aSF-6r-MDj" id="8lR-dU-2fw"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t1n-4p-lEH">
+                                <rect key="frame" x="150" y="64" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="I7T-Mu-vTH"/>
+                                    <constraint firstAttribute="height" constant="200" id="k5p-Ct-iYg"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="I7T-Mu-vTH"/>
+                                        <exclude reference="k5p-Ct-iYg"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFz-Sb-dwc">
+                                <rect key="frame" x="10" y="274" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KFz-Sb-dwc" firstAttribute="top" secondItem="3fx-av-0gZ" secondAttribute="bottom" constant="20" id="5Zj-4D-xBO"/>
+                            <constraint firstItem="5aQ-Er-9Vz" firstAttribute="top" secondItem="t1n-4p-lEH" secondAttribute="bottom" constant="20" id="BQU-yV-pRO"/>
+                            <constraint firstItem="KFz-Sb-dwc" firstAttribute="top" secondItem="t1n-4p-lEH" secondAttribute="bottom" constant="10" id="BZw-Pd-ZyL"/>
+                            <constraint firstItem="5aQ-Er-9Vz" firstAttribute="top" secondItem="t1n-4p-lEH" secondAttribute="bottom" constant="20" id="Fl1-a5-bqf"/>
+                            <constraint firstAttribute="trailing" secondItem="3fx-av-0gZ" secondAttribute="trailing" id="Pje-zP-hxX"/>
+                            <constraint firstItem="3fx-av-0gZ" firstAttribute="leading" secondItem="dGm-Gx-DXY" secondAttribute="leading" id="QRs-1m-glt"/>
+                            <constraint firstItem="t1n-4p-lEH" firstAttribute="leading" secondItem="dGm-Gx-DXY" secondAttribute="leading" constant="20" id="Utk-1A-rUA"/>
+                            <constraint firstItem="5aQ-Er-9Vz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KFz-Sb-dwc" secondAttribute="bottom" constant="10" id="XcZ-CF-9C0"/>
+                            <constraint firstItem="KFz-Sb-dwc" firstAttribute="leading" secondItem="t1n-4p-lEH" secondAttribute="trailing" constant="46" id="bEn-lZ-Ohy">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="t1n-4p-lEH" firstAttribute="centerY" secondItem="dGm-Gx-DXY" secondAttribute="centerY" id="dX3-4x-exq"/>
+                            <constraint firstItem="KFz-Sb-dwc" firstAttribute="centerY" secondItem="t1n-4p-lEH" secondAttribute="centerY" id="drx-2V-0B4"/>
+                            <constraint firstItem="KFz-Sb-dwc" firstAttribute="leading" secondItem="dGm-Gx-DXY" secondAttribute="leading" constant="10" id="fVq-qf-4kT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KFz-Sb-dwc" secondAttribute="trailing" constant="10" id="q1d-Mn-8Bq"/>
+                            <constraint firstItem="3fx-av-0gZ" firstAttribute="top" secondItem="vTY-1v-bck" secondAttribute="bottom" constant="-20" id="rNq-0Q-ba3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KFz-Sb-dwc" secondAttribute="trailing" constant="10" id="tXA-Ks-aHw"/>
+                            <constraint firstItem="t1n-4p-lEH" firstAttribute="top" secondItem="3fx-av-0gZ" secondAttribute="bottom" constant="20" id="u0Q-CQ-5GQ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="t1n-4p-lEH" firstAttribute="centerX" secondItem="dGm-Gx-DXY" secondAttribute="centerX" id="xmJ-fd-nQ1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Utk-1A-rUA"/>
+                                <exclude reference="dX3-4x-exq"/>
+                                <exclude reference="5Zj-4D-xBO"/>
+                                <exclude reference="bEn-lZ-Ohy"/>
+                                <exclude reference="drx-2V-0B4"/>
+                                <exclude reference="tXA-Ks-aHw"/>
+                                <exclude reference="BQU-yV-pRO"/>
+                                <exclude reference="Fl1-a5-bqf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <exclude reference="t1n-4p-lEH"/>
+                                <exclude reference="KFz-Sb-dwc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Utk-1A-rUA"/>
+                                <include reference="u0Q-CQ-5GQ"/>
+                                <include reference="bEn-lZ-Ohy"/>
+                                <include reference="drx-2V-0B4"/>
+                                <include reference="q1d-Mn-8Bq"/>
+                                <include reference="tXA-Ks-aHw"/>
+                                <include reference="BQU-yV-pRO"/>
+                                <exclude reference="Fl1-a5-bqf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="KFz-Sb-dwc" id="Gh0-ER-T7w"/>
+                        <outlet property="imageView" destination="t1n-4p-lEH" id="7md-CJ-kf3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pt-Xi-i9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="113"/>
+            <point key="canvasLocation" x="702" y="-23.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l6D-3e-vP5">
