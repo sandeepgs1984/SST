@@ -104,7 +104,7 @@ static CGFloat const kSectionInsetiPhone = 5.0;
 	_collectionView.delegate = self;
 	_collectionView.alwaysBounceVertical = YES;
 	_collectionView.alwaysBounceHorizontal = NO;
-	_collectionView.backgroundColor = [UIColor lightGrayColor];
+	_collectionView.backgroundColor =  [UIColor colorWithRed:232/255.0 green:237/255.0 blue:239/255.0 alpha:1.0];
 	
 		// Register cell
 	[_collectionView registerNib:[SSTImageCollectionViewCell nib] forCellWithReuseIdentifier:kSSTImageCellID];
