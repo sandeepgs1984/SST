@@ -7,7 +7,6 @@
 //
 
 #import "SSTImage.h"
-#import "UIDevice+DeviceType.h"
 
 NSString *const kImage = @"image";
 NSString *const kDescription = @"description";
