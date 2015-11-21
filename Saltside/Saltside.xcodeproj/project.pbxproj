@@ -14,6 +14,12 @@
 		0E50D7FC1C0058C800EC8552 /* SSTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7FB1C0058C800EC8552 /* SSTImage.m */; settings = {ASSET_TAGS = (); }; };
 		0E50D7FF1C005CEF00EC8552 /* SSTImagesFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D7FE1C005CEF00EC8552 /* SSTImagesFeed.m */; settings = {ASSET_TAGS = (); }; };
 		0E50D8021C005E9100EC8552 /* SSTAPIService+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D8011C005E9100EC8552 /* SSTAPIService+Images.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D8051C00982B00EC8552 /* SSTImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D8041C00982B00EC8552 /* SSTImageCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D80A1C00988A00EC8552 /* SSTImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E50D8081C00988A00EC8552 /* SSTImageCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0E50D80F1C009C9200EC8552 /* UIDevice+DeviceType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D80E1C009C9200EC8552 /* UIDevice+DeviceType.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D8121C00A81100EC8552 /* SSTImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D8111C00A81100EC8552 /* SSTImageDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D8151C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D8141C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
+		0E50D8181C00B02700EC8552 /* UIDevice+DeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E50D8171C00B02700EC8552 /* UIDevice+DeviceOrientation.m */; settings = {ASSET_TAGS = (); }; };
 		0E58C6F31C00259C00D0C841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E58C6F21C00259C00D0C841 /* main.m */; };
 		0E58C6FC1C00259C00D0C841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C6FA1C00259C00D0C841 /* Main.storyboard */; };
 		0E58C6FE1C00259C00D0C841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E58C6FD1C00259C00D0C841 /* Assets.xcassets */; };
@@ -49,6 +55,18 @@
 		0E50D7FE1C005CEF00EC8552 /* SSTImagesFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTImagesFeed.m; sourceTree = "<group>"; };
 		0E50D8001C005E9100EC8552 /* SSTAPIService+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSTAPIService+Images.h"; sourceTree = "<group>"; };
 		0E50D8011C005E9100EC8552 /* SSTAPIService+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSTAPIService+Images.m"; sourceTree = "<group>"; };
+		0E50D8031C00982B00EC8552 /* SSTImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTImageCollectionViewCell.h; sourceTree = "<group>"; };
+		0E50D8041C00982B00EC8552 /* SSTImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTImageCollectionViewCell.m; sourceTree = "<group>"; };
+		0E50D8081C00988A00EC8552 /* SSTImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSTImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		0E50D80D1C009C9200EC8552 /* UIDevice+DeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DeviceType.h"; sourceTree = "<group>"; };
+		0E50D80E1C009C9200EC8552 /* UIDevice+DeviceType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DeviceType.m"; sourceTree = "<group>"; };
+		0E50D8101C00A81100EC8552 /* SSTImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTImageDetailViewController.h; sourceTree = "<group>"; };
+		0E50D8111C00A81100EC8552 /* SSTImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTImageDetailViewController.m; sourceTree = "<group>"; };
+		0E50D8131C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		0E50D8141C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		0E50D8161C00B02700EC8552 /* UIDevice+DeviceOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DeviceOrientation.h"; sourceTree = "<group>"; };
+		0E50D8171C00B02700EC8552 /* UIDevice+DeviceOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DeviceOrientation.m"; sourceTree = "<group>"; };
+		0E50D8191C00BFD100EC8552 /* Saltside-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Saltside-Prefix.pch"; sourceTree = "<group>"; };
 		0E58C6EE1C00259B00D0C841 /* Saltside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saltside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E58C6F21C00259C00D0C841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E58C6FB1C00259C00D0C841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +130,17 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0E50D80C1C009C4F00EC8552 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0E50D80D1C009C9200EC8552 /* UIDevice+DeviceType.h */,
+				0E50D80E1C009C9200EC8552 /* UIDevice+DeviceType.m */,
+				0E50D8161C00B02700EC8552 /* UIDevice+DeviceOrientation.h */,
+				0E50D8171C00B02700EC8552 /* UIDevice+DeviceOrientation.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		0E58C6E51C00259B00D0C841 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				0E58C6F21C00259C00D0C841 /* main.m */,
+				0E50D8191C00BFD100EC8552 /* Saltside-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,6 +202,7 @@
 				0E50D7F61C00559400EC8552 /* Models */,
 				0E50D7EC1C0045DF00EC8552 /* API */,
 				0E58C71A1C00266600D0C841 /* Common */,
+				0E50D80C1C009C4F00EC8552 /* Categories */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -199,6 +230,8 @@
 			children = (
 				0E58C71C1C00266600D0C841 /* SSTHomeViewController.h */,
 				0E58C71D1C00266600D0C841 /* SSTHomeViewController.m */,
+				0E50D8101C00A81100EC8552 /* SSTImageDetailViewController.h */,
+				0E50D8111C00A81100EC8552 /* SSTImageDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +239,11 @@
 		0E58C71E1C00266600D0C841 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E50D8031C00982B00EC8552 /* SSTImageCollectionViewCell.h */,
+				0E50D8041C00982B00EC8552 /* SSTImageCollectionViewCell.m */,
+				0E50D8081C00988A00EC8552 /* SSTImageCollectionViewCell.xib */,
+				0E50D8131C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.h */,
+				0E50D8141C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +357,7 @@
 			files = (
 				0E58C7011C00259C00D0C841 /* LaunchScreen.storyboard in Resources */,
 				0E58C6FE1C00259C00D0C841 /* Assets.xcassets in Resources */,
+				0E50D80A1C00988A00EC8552 /* SSTImageCollectionViewCell.xib in Resources */,
 				0E58C6FC1C00259C00D0C841 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,14 +426,19 @@
 			files = (
 				0E58C6F31C00259C00D0C841 /* main.m in Sources */,
 				0E50D8021C005E9100EC8552 /* SSTAPIService+Images.m in Sources */,
+				0E50D8181C00B02700EC8552 /* UIDevice+DeviceOrientation.m in Sources */,
 				0E50D7F51C00479700EC8552 /* SSTURLCache.m in Sources */,
+				0E50D8151C00AE2B00EC8552 /* SSTCollectionViewFlowLayout.m in Sources */,
 				0E50D7FC1C0058C800EC8552 /* SSTImage.m in Sources */,
 				0E50D7FF1C005CEF00EC8552 /* SSTImagesFeed.m in Sources */,
 				0E58C7211C00266600D0C841 /* SSTHomeViewController.m in Sources */,
 				0E58C7201C00266600D0C841 /* SSTAppDelegate.m in Sources */,
 				0E50D7F91C0055F500EC8552 /* SSTModel.m in Sources */,
+				0E50D8121C00A81100EC8552 /* SSTImageDetailViewController.m in Sources */,
+				0E50D8051C00982B00EC8552 /* SSTImageCollectionViewCell.m in Sources */,
 				0E50D7F21C00469900EC8552 /* SSTUtilities.m in Sources */,
 				0E50D7EF1C00460B00EC8552 /* SSTAPIService.m in Sources */,
+				0E50D80F1C009C9200EC8552 /* UIDevice+DeviceType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +567,7 @@
 			baseConfigurationReference = 1B2F5C5BBA925CED92EFFF98 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Saltside/Saltside-Prefix.pch";
 				INFOPLIST_FILE = Saltside/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SST.assignment.Saltside;
@@ -535,6 +580,7 @@
 			baseConfigurationReference = 4C687B2D3DC7D24D5CC40322 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Saltside/Saltside-Prefix.pch";
 				INFOPLIST_FILE = Saltside/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SST.assignment.Saltside;
