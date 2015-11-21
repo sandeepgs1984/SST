@@ -19,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+
+		// Navigaton bar & status bar appearance
+	[self setUpNavBarAppearance];
+
 	return YES;
 }
 
@@ -42,6 +46,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -
+#pragma mark - Instance Methods
+
+- (void) setUpNavBarAppearance
+{
+	[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:[UIDevice isCurrentDevicePhone] ? 18.0 : 20.0], NSFontAttributeName, nil]];
+	
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 @end

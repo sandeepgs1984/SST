@@ -72,6 +72,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gar-s7-LHw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.13333333333333333" green="0.56862745098039214" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -80,7 +81,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSC-QJ-FLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="-502"/>
+            <point key="canvasLocation" x="26" y="-790"/>
         </scene>
     </scenes>
 </document>

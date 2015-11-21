@@ -57,6 +57,9 @@ static CGFloat const kSectionInsetiPhone = 5.0;
 {
 	[super viewDidLoad];
 	
+		// Navigation Bar Title
+	self.title = NSLocalizedString(@"Home", nil);
+	
 		// Configure collection view
 	[self setupCollectionView];
 	
