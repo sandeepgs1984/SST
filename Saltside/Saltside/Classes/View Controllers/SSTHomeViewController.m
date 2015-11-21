@@ -10,6 +10,8 @@
 #import "SSTImageCollectionViewCell.h"
 #import "SSTCollectionViewFlowLayout.h"
 
+#import "SSTImageDetailViewController.h"
+
 #import "SSTAPIService+Images.h"
 #import "SSTImagesFeed.h"
 
@@ -172,7 +174,11 @@ static CGFloat const kSectionInsetiPhone = 5.0;
 {
 	[collectionView deselectItemAtIndexPath:indexPath animated:YES];
 	
-	SSTImage *clickedImage = _imageFeed.images[indexPath.item];
+	SSTImageDetailViewController *detailsVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ImageDetails"];
+	detailsVC.selectedImage = _imageFeed.images[indexPath.item];
+	[self presentViewController:detailsVC animated:YES completion:^{
+		
+	}];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
