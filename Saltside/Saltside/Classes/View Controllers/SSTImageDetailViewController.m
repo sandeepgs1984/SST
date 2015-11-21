@@ -7,6 +7,7 @@
 //
 
 #import "SSTImageDetailViewController.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface SSTImageDetailViewController ()
 
@@ -24,7 +25,9 @@
 	[super viewDidLoad];
 	
 		// Control values
-	_imageView.image = [UIImage imageNamed:@"sst_placeholder"];
+	if (_selectedImage.image.length > 0) {
+		[_imageView setImageWithURL:[NSURL URLWithString:_selectedImage.image] placeholderImage:[UIImage imageNamed:@"sst_placeholder"]];
+	}
 	_contentLabel.attributedText = _selectedImage.attributedContentString;
 }
 
@@ -34,6 +37,15 @@
 - (IBAction)close:(id)sender
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -
+#pragma mark - Dealloc
+
+- (void)dealloc
+{
+	[_imageView cancelImageRequestOperation];
+	_imageView.image = nil;
 }
 
 @end

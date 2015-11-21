@@ -45,6 +45,14 @@
 	self.contentView.backgroundColor = [UIColor whiteColor];
 }
 
+- (void)prepareForReuse
+{
+	[super prepareForReuse];
+	
+    [_imageView cancelImageRequestOperation];
+    _imageView.image = nil;
+}
+
 - (CGSize)sizeThatFits:(CGSize)size
 {
 	CGSize fittingSize = CGSizeMake(size.width, 0);
@@ -66,9 +74,8 @@
 
 - (void) configureCellData:(SSTImage *) image
 {
-	_imageView.image = [UIImage imageNamed:@"sst_placeholder"];
 	if (image.image.length > 0) {
-//		[_imageView setImageWithURL:[NSURL URLWithString:image.image] placeholderImage:nil];
+		[_imageView setImageWithURL:[NSURL URLWithString:image.image] placeholderImage:[UIImage imageNamed:@"sst_placeholder"]];
 	}
 	
 	_contentLabel.attributedText = image.attributedContentString;
