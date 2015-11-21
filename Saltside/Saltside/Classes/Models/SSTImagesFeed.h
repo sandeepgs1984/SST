@@ -7,7 +7,10 @@
 //
 
 #import "SSTModel.h"
+#import "SSTImage.h"
 
 @interface SSTImagesFeed : SSTModel
+
+@property (nonatomic, strong) NSArray *images; // contains list of SSTImage objects
 
 @end

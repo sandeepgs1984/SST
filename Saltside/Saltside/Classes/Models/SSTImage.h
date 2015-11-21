@@ -10,4 +10,8 @@
 
 @interface SSTImage : SSTModel
 
+@property (nonatomic, strong) NSString *image; // contains image path
+@property (nonatomic, strong) NSString *desc;
+@property (nonatomic, strong) NSString *title;
+
 @end
