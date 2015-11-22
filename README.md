@@ -19,13 +19,14 @@ Some of the iOS concepts used in this assignment:
 - Storyboards
 - Datasources/Delegates
 - Notifications
+- Operation Queues
+- Blocks
+- Singleton Class
 - Collection views/custom cells
 - Custom collection view flow layout
 - Categories
 
-This assignment has been done by considering measures like scalability and performance.
-
-I will share the architecture diagram of this assignment tomorrow or in couple of days.
+This assignment has been implemented based on Obj-C design pattern MVC and considering measures like scalability and performance.
 
 The following improvements can be done:
 - Loading indicator until data loads
@@ -33,7 +34,5 @@ The following improvements can be done:
 - Launch image
 - Size classes for different layouts
 - Unit test cases
-
-Due to time constraint, I was not able to do these improvements. I will implement and push these to github repository whenever i get time.
 
 NOTE: Open Saltside.xcworkspace file instead of Saltside.xcodeproj in the SST/Saltside folder from Xcode to run the app as we integrated cocoapods.
